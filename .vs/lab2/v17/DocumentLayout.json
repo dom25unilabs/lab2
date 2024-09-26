@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dom25\\source\\repos\\lab2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D00F5B8-1336-4469-BB96-7ED533C3422F}|lab2.vcxproj|C:\\Users\\dom25\\source\\repos\\lab2\\lab2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8D00F5B8-1336-4469-BB96-7ED533C3422F}|lab2.vcxproj|solutionrelative:lab2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "lab2.cpp",
+              "DocumentMoniker": "C:\\Users\\dom25\\source\\repos\\lab2\\lab2.cpp",
+              "RelativeDocumentMoniker": "lab2.cpp",
+              "ToolTip": "C:\\Users\\dom25\\source\\repos\\lab2\\lab2.cpp",
+              "RelativeToolTip": "lab2.cpp",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGcAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-25T12:22:56.061Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
