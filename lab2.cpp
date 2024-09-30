@@ -2,7 +2,6 @@
 #include <iomanip>
 #include <io.h>
 #include <fcntl.h>
-#include <vector>
 static bool isprime(int n)
 {
 	if (n == 1)
@@ -24,9 +23,9 @@ static bool isprime(int n)
 }
 int wmain(int argc, wchar_t* argv[])
 {
-	_setmode(_fileno(stdout), _O_U16TEXT);
-	_setmode(_fileno(stdin), _O_U16TEXT);
-	_setmode(_fileno(stderr), _O_U16TEXT);
+	_setmode(_fileno(stdout), _O_U8TEXT);
+	_setmode(_fileno(stdin), _O_U8TEXT);
+	_setmode(_fileno(stderr), _O_U8TEXT);
 	bool autoui = true;
 	if (argc <= 1 || std::wcsncmp(argv[1], L"false", sizeof(L"false") - 1) != 0)
 	{
@@ -46,7 +45,6 @@ int wmain(int argc, wchar_t* argv[])
 		std::wcout << L"Введите длину последовательности N:";
 	}
 	std::wcin >> n;
-	std::vector<int> primes(0);
 	for (cnt_all = 0; cnt_all < n; cnt_all++)
 	{
 		if (!autoui)
@@ -59,7 +57,7 @@ int wmain(int argc, wchar_t* argv[])
 			std::wcout << x;
 			if (!autoui)
 			{
-				std::wcout << L"является простым числом";
+				std::wcout << L" является простым числом";
 			}
 			std::wcout  <<'\n';
 		}
