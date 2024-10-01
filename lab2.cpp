@@ -74,7 +74,7 @@ int wmain(int argc, wchar_t* argv[])
 		{
 			cnt_div_5 += 1;
 		}
-		if (x > 1 && (x & (x - 1)) == 0)
+		if (x > 0 && (x & (x - 1)) == 0)
 		{
 			cnt_power_2 += 1;
 		}
