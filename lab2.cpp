@@ -31,7 +31,7 @@ int wmain(int argc, wchar_t* argv[])
 	{
 		autoui = false;
 	}
-	int cnt_all = 0;
+	int i = 0;
 	int x = -1;
 	int sum_all = 0;
 	int mn = INT32_MAX, mx = INT32_MIN;
@@ -45,11 +45,11 @@ int wmain(int argc, wchar_t* argv[])
 		std::wcout << L"Введите длину последовательности N:";
 	}
 	std::wcin >> n;
-	for (cnt_all = 0; cnt_all < n; cnt_all++)
+	for (i = 0; i < n; i++)
 	{
 		if (!autoui)
 		{
-			std::wcout << L"Введите X" << cnt_all << L":";
+			std::wcout << L"Введите X" << i << L":";
 		}
 		std::wcin >> x;
 		if (isprime(x))
@@ -78,7 +78,7 @@ int wmain(int argc, wchar_t* argv[])
 		{
 			cnt_power_2 += 1;
 		}
-		if (cnt_all > 2 && x > (prev + pprev))
+		if (i > 1 && x > (prev + pprev))
 		{
 			cnt_max_of_3 += 1;
 		}
@@ -87,7 +87,7 @@ int wmain(int argc, wchar_t* argv[])
 	}
 	if (autoui)
 	{
-		std::wcout << std::fixed << std::setprecision(2) << ((double)sum_all / cnt_all) << '\n';
+		std::wcout << std::fixed << std::setprecision(2) << ((double)sum_all / т) << '\n';
 		std::wcout << mx - mn << '\n';
 		std::wcout << cnt_div_5 << '\n';
 		std::wcout << cnt_power_2 << '\n';
@@ -95,7 +95,7 @@ int wmain(int argc, wchar_t* argv[])
 	}
 	else
 	{
-		std::wcout << L"Среднее значение последовательности:" << std::fixed << std::setprecision(2) << ((double)sum_all / cnt_all)  << '\n';
+		std::wcout << L"Среднее значение последовательности:" << std::fixed << std::setprecision(2) << ((double)sum_all / т)  << '\n';
 		std::wcout << L"Размах последовательности (разница Xmin и Xmax):" << mx - mn << '\n';
 		std::wcout << L"Количество элементов последовательности, кратных числу 5:" << cnt_div_5 << '\n';
 		std::wcout << L"Количество элементов последовательности, являющихся степенью двойки:" << cnt_power_2 << '\n';
