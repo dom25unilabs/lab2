@@ -78,7 +78,7 @@ int wmain(int argc, wchar_t* argv[])
 		{
 			cnt_power_2 += 1;
 		}
-		if (cnt_all > 2 && x > prev + pprev)
+		if (cnt_all > 2 && x > (prev + pprev))
 		{
 			cnt_max_of_3 += 1;
 		}
