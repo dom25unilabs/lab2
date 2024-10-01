@@ -87,7 +87,7 @@ int wmain(int argc, wchar_t* argv[])
 	}
 	if (autoui)
 	{
-		std::wcout << std::fixed << std::setprecision(2) << (sum_all * 100 / cnt_all) / 100.0 << '\n';
+		std::wcout << std::fixed << std::setprecision(2) << ((double)sum_all / cnt_all) << '\n';
 		std::wcout << mx - mn << '\n';
 		std::wcout << cnt_div_5 << '\n';
 		std::wcout << cnt_power_2 << '\n';
@@ -95,7 +95,7 @@ int wmain(int argc, wchar_t* argv[])
 	}
 	else
 	{
-		std::wcout << L"Среднее значение последовательности:" << std::fixed << std::setprecision(2) << (sum_all * 100 / cnt_all) / 100.0 << '\n';
+		std::wcout << L"Среднее значение последовательности:" << std::fixed << std::setprecision(2) << ((double)sum_all / cnt_all)  << '\n';
 		std::wcout << L"Размах последовательности (разница Xmin и Xmax):" << mx - mn << '\n';
 		std::wcout << L"Количество элементов последовательности, кратных числу 5:" << cnt_div_5 << '\n';
 		std::wcout << L"Количество элементов последовательности, являющихся степенью двойки:" << cnt_power_2 << '\n';
