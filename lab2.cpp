@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <io.h>
 #include <fcntl.h>
+#include <cmath>
 static bool isprime(int n)
 {
 	if (n == 1)
@@ -52,6 +53,7 @@ int wmain(int argc, wchar_t* argv[])
 			std::wcout << L"¬ведите X" << i << L":";
 		}
 		std::wcin >> x;
+		std::wcout << std::pow(x, n - i) << '\n';
 		if (isprime(x))
 		{
 			std::wcout << x;
